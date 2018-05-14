@@ -32,25 +32,30 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (txtEmail.getText().toString().trim().equals("") || txtPassword.getText().toString().trim().equals("") || txtConfirmPassword.getText().toString().trim().equals("")) {
             Toast.makeText(RegisterActivity.this, "Hay campos vacíos", Toast.LENGTH_SHORT).show();
-        }
-        else{
+        } else {
             if (txtPassword.getText().toString().trim().equals(txtConfirmPassword.getText().toString().trim())) {
-                Log.d("Insert:", "Insertando...");
-                if (db.addUser(new Usuarios(txtEmail.getText().toString().trim(), txtPassword.getText().toString().trim())) > 1) {
-                    Toast.makeText(RegisterActivity.this, "Insertó", Toast.LENGTH_SHORT).show();
-                    cleanInputs();
-                    Intent i = new Intent(RegisterActivity.this, MenuActivity.class);
-                    startActivity(i);
+                boolean f=db.checkUser(txtEmail.getText().toString().trim());
+                if (!f) {
+                    Log.d("Insert:", "Insertando...");
+                    long r= db.addUser(new Usuarios(txtEmail.getText().toString().trim(), txtPassword.getText().toString().trim()));
+                    if (r > 0) {
+                        Toast.makeText(RegisterActivity.this, "Insertó "+r, Toast.LENGTH_SHORT).show();
+                        cleanInputs();
+                        //Intent i = new Intent(RegisterActivity.this, MenuActivity.class);
+                        //startActivity(i);
+                    } else {
+                        Toast.makeText(RegisterActivity.this, "No insertó", Toast.LENGTH_SHORT).show();
+                        cleanInputs();
+                    }
                 } else {
-                    Toast.makeText(RegisterActivity.this, "No insertó", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Este correo ya está registrado", Toast.LENGTH_SHORT).show();
                     cleanInputs();
                 }
             } else {
                 Toast.makeText(RegisterActivity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+
             }
         }
-
-
     }
 
     public void hasAccount(View v) {
@@ -58,7 +63,7 @@ public class RegisterActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void cleanInputs(){
+    public void cleanInputs() {
         txtEmail.setText("");
         txtPassword.setText("");
         txtConfirmPassword.setText("");

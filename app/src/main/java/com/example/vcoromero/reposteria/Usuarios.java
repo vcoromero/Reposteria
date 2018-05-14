@@ -6,7 +6,7 @@ package com.example.vcoromero.reposteria;
 
 public class Usuarios {
 
-    public static final String TABLE = "usuarios";
+    public static final String TABLE = "usuarios2";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_EMAIL = "email";
     public static final String COLUMN_PASSWORD = "password";
