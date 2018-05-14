@@ -6,16 +6,24 @@ package com.example.vcoromero.reposteria;
 
 public class Usuarios {
 
+    public static final String TABLE = "usuarios2";
+    public static final String COLUMN_ID = "id";
+    public static final String COLUMN_EMAIL = "email";
+    public static final String COLUMN_PASSWORD = "password";
+
     private int id;
     private String email;
     private String password;
-
+    public static final String CREATE_TABLE ="CREATE TABLE " + TABLE
+            + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + COLUMN_EMAIL + " TEXT NOT NULL, "
+            + COLUMN_PASSWORD + " TEXT NOT NULL)";
     public Usuarios() {
 
     }
 
-    public Usuarios(int id, String email, String password) {
-        this.id = id;
+    public Usuarios(String email, String password) {
+
         this.email = email;
         this.password = password;
     }
