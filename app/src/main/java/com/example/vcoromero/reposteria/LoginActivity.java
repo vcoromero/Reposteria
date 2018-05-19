@@ -33,21 +33,24 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             if (db.checkUser(txtEmail.getText().toString().trim(), txtPassword.getText().toString().trim())) {
                 Log.d("Login:", "Logeando...");
-                Toast.makeText(LoginActivity.this, "Entró", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
                 cleanInputs();
+
                 Intent i = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(i);
+                LoginActivity.this.finish();
 
             } else {
                 Toast.makeText(LoginActivity.this, "Ocurrió algún error, verifique sus datos.", Toast.LENGTH_SHORT).show();
-                cleanInputs();
             }
         }
     }
 
     public void signup(View v) {
+
         Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(i);
+        LoginActivity.this.finish();
     }
 
     public void cleanInputs() {
