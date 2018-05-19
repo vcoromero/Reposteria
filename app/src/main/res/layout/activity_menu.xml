@@ -12,6 +12,17 @@
     android:paddingTop="20dp"
     tools:context="com.example.vcoromero.reposteria.MenuActivity">
 
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
     <Button
         android:id="@+id/btnClose"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"

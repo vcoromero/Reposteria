@@ -5,11 +5,11 @@
     android:id="@+id/lytPrincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="20dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingTop="20dp"
-    android:orientation="vertical"
     tools:context="com.example.vcoromero.reposteria.RegisterActivity">
 
     <TextView
@@ -31,12 +31,19 @@
         android:layout_height="wrap_content"
         android:text="@string/lblPassword" />
 
-    <EditText
-        android:id="@+id/txtPassword"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword" />
+        app:passwordToggleEnabled = "true">
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
 
     <TextView
         android:id="@+id/lblConfirmPassword"
@@ -44,12 +51,19 @@
         android:layout_height="wrap_content"
         android:text="@string/lblConfirmPassword" />
 
-    <EditText
-        android:id="@+id/txtCofirmPassword"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword" />
+        app:passwordToggleEnabled = "true">
+
+        <EditText
+            android:id="@+id/txtCofirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/btnConfirm"

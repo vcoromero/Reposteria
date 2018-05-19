@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Log.d("Insert:", "Insertando...");
                     long r= db.addUser(new Usuarios(txtEmail.getText().toString().trim(), txtPassword.getText().toString().trim()));
                     if (r > 0) {
-                        Toast.makeText(RegisterActivity.this, "Insertó "+r, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Se ha registrado tu correo exitosamente", Toast.LENGTH_SHORT).show();
                         cleanInputs();
                         //Intent i = new Intent(RegisterActivity.this, MenuActivity.class);
                         //startActivity(i);
@@ -59,8 +59,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void hasAccount(View v) {
+
         Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(i);
+        RegisterActivity.this.finish();
     }
 
     public void cleanInputs() {
