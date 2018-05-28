@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Reposteria</string>
+    <string name="app_name">Dulces Sabores</string>
 
     <string name="lblEmail">Correo:</string>
     <string name="lblPassword">Contraseña:</string>
@@ -10,4 +10,15 @@
     <string name="btnConfirm">Confirmar</string>
     <string name="btnHasAccount">Ya tienes una cuenta, inicia sesión</string>
     <string name="btnClose">Cerrar</string>
+
+    <string name="lblPasteles">Pasteles</string>
+    <string name="lblCupcakes">Cup cakes</string>
+    <string name="lblGalletas">Galletas</string>
+    <string name="lblTituloPastel">Nuestras delicias en pastel</string>
+    <string name="lblCumpleaños">Cumpleaños</string>
+    <string name="lblBoda">Boda</string>
+    <string name="lblXVaños">XV Años</string>
+    <string name="lblEspeciales">Ocasiones especiales</string>
+
+    <string name="todo">todo</string>
 </resources>

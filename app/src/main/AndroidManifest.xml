@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".DescripcionPastelActivity" />
+        <activity android:name=".TipoPastelActivity" />
+        <activity android:name=".PedidoActivity"></activity>
     </application>
 
 </manifest>

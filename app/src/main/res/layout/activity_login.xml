@@ -12,6 +12,17 @@
     android:paddingTop="20dp"
     tools:context="com.example.vcoromero.reposteria.LoginActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="331dp"
+            android:layout_height="124dp"
+            app:srcCompat="@drawable/dulces_sabores" />
+    </FrameLayout>
+
     <TextView
         android:id="@+id/lblEmail"
         android:layout_width="match_parent"
@@ -34,8 +45,7 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled = "true"
-        >
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/txtPassword"
