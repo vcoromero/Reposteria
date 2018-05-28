@@ -1,5 +1,6 @@
 package com.example.vcoromero.reposteria;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ public class MenuActivity extends AppCompatActivity {
 
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.cupcake, R.drawable.hotcake, R.drawable.cupcake2};
+    int[] sampleImages = {R.drawable.coficial, R.drawable.poficial, R.drawable.goficial};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +34,10 @@ public class MenuActivity extends AppCompatActivity {
 
     public void close(View v) {
         MenuActivity.this.finish();
+    }
+
+    public void openPasteles(View v){
+        Intent i = new Intent(MenuActivity.this, TipoPastelActivity.class);
+        startActivity(i);
     }
 }
