@@ -17,14 +17,47 @@
 
     <string name="lblTituloPasteles">Nuestras delicias en pastel</string>
     <string name="lblCumpleaños">Cumpleaños</string>
+
     <string name="lblPastelesCumpleaños">Pasteles de cumpleaños</string>
     <string name="lblPastelRosa">Pastel Rosa</string>
     <string name="lblPawPatrol">Pastel Paw Patrol</string>
     <string name="lblSnoopy">Pastel Snoopy</string>
     <string name="lblPastelChocolate">Pastel Chocolate</string>
+
     <string name="lblBoda">Boda</string>
     <string name="lblXVaños">XV Años</string>
     <string name="lblEspeciales">Ocasiones especiales</string>
 
+    <string name="lblRealizarPedido">Realizar pedido</string>
+    <string name="lblNombre">Nombre:</string>
+    <string name="lblDireccion">Dirección:</string>
+    <string name="lblTelefono">Teléfono:</string>
+    <string name="lblFechaEntrega">Fecha entrega:</string>
+    <string name="lblHoraEntrega">Hora de entrega:</string>
+    <string name="lblSaborPan">Sabor pan:</string>
+    <string name="lblTamaño">Tamaño:</string>
+    <string name="lblSaborRelleno">Sabor de relleno:</string>
+    <string name="lblExtra">Extra:</string>
+    <string name="btnRealizarPedido">¡Listo!</string>
     <string name="todo">todo</string>
+
+
+    <string-array name="sabor_pan_array">
+        <item>Chocolate</item>
+        <item>Vainilla</item>
+    </string-array>
+
+    <string-array name="sabor_relleno_array">
+        <item>Fresas naturales</item>
+        <item>Chocolate</item>
+        <item>Chantillí</item>
+        <item>Nutella</item>
+    </string-array>
+
+    <string-array name="tamaño_array">
+        <item>Mediano()</item>
+        <item>Grande()</item>
+    </string-array>
+
+
 </resources>

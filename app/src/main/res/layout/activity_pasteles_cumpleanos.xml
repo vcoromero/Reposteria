@@ -79,7 +79,8 @@
                         android:layout_toEndOf="@+id/ivPastelRosa"
                         android:layout_toRightOf="@+id/ivPastelRosa"
                         android:text="@string/lblPastelRosa"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
