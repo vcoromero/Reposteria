@@ -14,8 +14,14 @@
     <string name="lblPasteles">Pasteles</string>
     <string name="lblCupcakes">Cup cakes</string>
     <string name="lblGalletas">Galletas</string>
-    <string name="lblTituloPastel">Nuestras delicias en pastel</string>
+
+    <string name="lblTituloPasteles">Nuestras delicias en pastel</string>
     <string name="lblCumpleaños">Cumpleaños</string>
+    <string name="lblPastelesCumpleaños">Pasteles de cumpleaños</string>
+    <string name="lblPastelRosa">Pastel Rosa</string>
+    <string name="lblPawPatrol">Pastel Paw Patrol</string>
+    <string name="lblSnoopy">Pastel Snoopy</string>
+    <string name="lblPastelChocolate">Pastel Chocolate</string>
     <string name="lblBoda">Boda</string>
     <string name="lblXVaños">XV Años</string>
     <string name="lblEspeciales">Ocasiones especiales</string>

@@ -20,7 +20,9 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".DescripcionPastelActivity" />
         <activity android:name=".TipoPastelActivity" />
-        <activity android:name=".PedidoActivity"></activity>
+        <activity android:name=".PedidoActivity" />
+        <activity android:name=".PastelesCumpleanosActivity" />
+        <activity android:name=".PastelRosaActivity"></activity>
     </application>
 
 </manifest>
