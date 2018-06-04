@@ -5,17 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TipoPastelActivity extends AppCompatActivity {
+public class PastelesCumpleanosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipo_pastel);
+        setContentView(R.layout.activity_pasteles_cumpleanos);
     }
 
-
-    public void openPastelesCumpleanos(View v){
-        Intent i = new Intent(TipoPastelActivity.this, PastelesCumpleanosActivity.class);
+    public void openPastelRosa(View v){
+        Intent i = new Intent(PastelesCumpleanosActivity.this, PastelRosaActivity.class);
         startActivity(i);
     }
 }
