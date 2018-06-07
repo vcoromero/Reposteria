@@ -79,14 +79,13 @@ public class PedidoActivity extends AppCompatActivity {
                             txtExtra.getText().toString().trim()));
             if (r > 0) {
                 Toast.makeText(PedidoActivity.this, "Se ha registrado tu pedido exitosamente " + r, Toast.LENGTH_SHORT).show();
-
                 Intent i = new Intent(PedidoActivity.this, MostrarPedidoActivity.class);
                 i.putExtra("id", Long.toString(r));
                 i.putExtra("nombre", txtNombre.getText().toString().trim());
                 i.putExtra("direccion", txtDireccion.getText().toString().trim());
                 i.putExtra("telefono", txtTelefono.getText().toString().trim());
-                i.putExtra("fecha_entegra", txtFechaEntrega.getText().toString().trim());
-                i.putExtra("hora_entrega", txtHoraEntrega.getText().toString().trim());
+                i.putExtra("fecha", txtFechaEntrega.getText().toString().trim());
+                i.putExtra("hora", txtHoraEntrega.getText().toString().trim());
                 i.putExtra("sabor", spinnerSaborPan.getSelectedItem().toString().trim());
                 i.putExtra("tamaño", spinnerTamaño.getSelectedItem().toString().trim());
                 i.putExtra("relleno", spinnerSaborRelleno.getSelectedItem().toString().trim());

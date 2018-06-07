@@ -36,20 +36,19 @@ public class MostrarPedidoActivity extends AppCompatActivity {
         lblRelleno = (TextView) findViewById(R.id.lblPedidoRellenoPan);
         lblTamano = (TextView) findViewById(R.id.lblPedidoTamano);
         lblExtra = (TextView) findViewById(R.id.lblPedidoExtra);
-        deb = new DatabaseHelper(this);
+
         Bundle parametros = this.getIntent().getExtras();
         if (parametros != null) {
             id = parametros.getString("id");
             lblNombre.setText(parametros.getString("nombre"));
-            lblDireccion.setText(parametros.getString("direcion"));
+            lblDireccion.setText(parametros.getString("direccion"));
             lblTelefono.setText(parametros.getString("telefono"));
-            lblFechaEntrega.setText(parametros.getString("fecha_entrega"));
-            lblHoraEntrega.setText(parametros.getString("hora_entrega"));
+            lblFechaEntrega.setText(parametros.getString("fecha"));
+            lblHoraEntrega.setText(parametros.getString("hora"));
             lblSabor.setText(parametros.getString("sabor"));
             lblRelleno.setText(parametros.getString("relleno"));
             lblTamano.setText(parametros.getString("tamaño"));
             lblExtra.setText(parametros.getString("extra"));
-            //this.mostrarPedido(Long.parseLong(id)); esta fallando el metodo ARREGLAR
             Toast.makeText(MostrarPedidoActivity.this, id, Toast.LENGTH_LONG).show();
         }
 
