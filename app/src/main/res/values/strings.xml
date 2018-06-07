@@ -59,5 +59,12 @@
         <item>Grande(50cm de diametro)</item>
     </string-array>
 
-
+    <string name="lblDescripcionPastelRosa">Pastel cubierto de merengue y decoraciones en fondant.\n\n
+    Sabores de pan:\n
+    - Chocolate.\n - Vanilla.\n\n
+    Relleno:\
+    - Fresas naturales. \n - Chantillí. \n - Chocolate. \n - Nutela. </string>
+    <string name="tamano">Tamaño:\n
+    - Mediano (30cm de diametro).\n\n
+    - Grande (50cm de diametro). </string>
 </resources>

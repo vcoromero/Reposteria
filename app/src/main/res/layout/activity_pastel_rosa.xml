@@ -71,14 +71,26 @@
                         app:srcCompat="@drawable/cumpleanos3" />
 
                     <TextView
-                        android:id="@+id/lblPastelRosa"
+                        android:id="@+id/lblDescripcionPastelRosa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
                         android:layout_margin="10dp"
                         android:layout_toEndOf="@+id/ivPastelRosa"
                         android:layout_toRightOf="@+id/ivPastelRosa"
-                        android:text="@string/lblPastelRosa"
+                        android:autoText="false"
+                        android:paddingBottom="5dp"
+                        android:text="@string/lblDescripcionPastelRosa"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/lblDescripcionTamano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivPastelRosa"
+                        android:layout_margin="10dp"
+                        android:layout_toLeftOf="@+id/lblDescripcionPastelRosa"
+                        android:text="@string/tamano"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 </RelativeLayout>
