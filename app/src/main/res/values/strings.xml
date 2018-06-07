@@ -55,8 +55,8 @@
     </string-array>
 
     <string-array name="tamaño_array">
-        <item>Mediano()</item>
-        <item>Grande()</item>
+        <item>Mediano(30cm de diametro)</item>
+        <item>Grande(50cm de diametro)</item>
     </string-array>
 
 

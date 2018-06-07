@@ -22,7 +22,8 @@
         <activity android:name=".TipoPastelActivity" />
         <activity android:name=".PedidoActivity" />
         <activity android:name=".PastelesCumpleanosActivity" />
-        <activity android:name=".PastelRosaActivity"></activity>
+        <activity android:name=".PastelRosaActivity" />
+        <activity android:name=".MostrarPedidoActivity"></activity>
     </application>
 
 </manifest>
