@@ -79,7 +79,7 @@ public class PedidoActivity extends AppCompatActivity {
                             txtExtra.getText().toString().trim()));
             if (r > 0) {
                 Toast.makeText(PedidoActivity.this, "Se ha registrado tu pedido exitosamente " + r, Toast.LENGTH_SHORT).show();
-                cleanInputs();
+
                 Intent i = new Intent(PedidoActivity.this, MostrarPedidoActivity.class);
                 i.putExtra("id", Long.toString(r));
                 i.putExtra("nombre", txtNombre.getText().toString().trim());
@@ -92,6 +92,7 @@ public class PedidoActivity extends AppCompatActivity {
                 i.putExtra("relleno", spinnerSaborRelleno.getSelectedItem().toString().trim());
                 i.putExtra("extra", txtExtra.getText().toString().trim());
                 startActivity(i);
+                cleanInputs();
             } else {
                 Toast.makeText(PedidoActivity.this, "Ocurrió un error al realizar el pedido", Toast.LENGTH_SHORT).show();
                 cleanInputs();
